@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Ticket">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_4" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="665dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:paddingTop="6dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backbtn"/>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle_5" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_btn"/>
+
+    <ImageButton
+        android:id="@+id/btn_ticket"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:srcCompat="@drawable/ticket_btn" />
+
+    <ImageButton
+        android:id="@+id/btn_disable"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_ticket"
+        app:srcCompat="@drawable/disable_btn" />
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_disable"
+        app:srcCompat="@drawable/profile_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiket"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:fontFamily="@font/montserrat_semibold"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DPR-01A"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:fontFamily="@font/montserrat_semibold"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf=""/>
+
+    <ImageButton
+        android:id="@+id/btn_call"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_call"
+        android:onClick="whatsapp"
+        app:layout_constraintTop_toBottomOf=""
+        tools:layout_editor_absoluteY="502dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
